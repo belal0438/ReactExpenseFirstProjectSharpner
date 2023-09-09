@@ -33,12 +33,16 @@ const ExpensForm = (props) => {
       product: enterdProduct,
       category: enterdCategory,
     };
-
     // console.log(obj);
-    props.sendtDataToApp(obj);
-    setEnterdId("");
-    setEnterdPrice("");
-    setEnterdProduct("");
+
+    if (obj.id === "" || obj.price === "" || obj.product === "") {
+      return alert("Pleasse Fill All Value");
+    } else {
+      props.sendtDataToApp(obj);
+      setEnterdId("");
+      setEnterdPrice("");
+      setEnterdProduct("");
+    }
   };
 
   return (

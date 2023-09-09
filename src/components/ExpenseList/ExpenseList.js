@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ExpenseList.css";
 
 const ExpenseList = (props) => {
-  // console.log(props.data);
-
   const foodItem = props.data.filter((ele) => {
     if (ele.category === "Food Item") {
       return ele;
+    } else {
+      return false;
     }
   });
 
   const electronicItem = props.data.filter((ele) => {
     if (ele.category === "Electronic Item") {
       return ele;
+    } else {
+      return false;
     }
   });
 
