@@ -1,0 +1,34 @@
+.formInput {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput label {
+  padding: 10px 0px 4px 8px;
+  text-align: left;
+}
+.formInput input {
+  height: 25px;
+  box-sizing: border-box;
+  color: #4b4b4b;
+  font-size: 15px;
+  border-radius: 3px;
+  margin: auto 5px;
+}
+
+.formInput select {
+  height: 25px;
+  box-sizing: border-box;
+  color: #4b4b4b;
+  font-size: 15px;
+  border-radius: 4px;
+  margin: auto 5px;
+}
+
+form button {
+  margin-top: 10px;
+  inline-size: 70px;
+  padding: 6px;
+  border-radius: 3px;
+}
